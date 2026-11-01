@@ -1,0 +1,4 @@
+# The Altman Utilization Audit
+> A free parody website about the October 2026 meme in which Sam Altman reportedly called it "quite terrible" for ordinary people to have RAM sitting in their PCs. Users pick their RAM size and receive a joke "notice of hardware seizure". It does not scan anything and collects no data. Satire; not affiliated with OpenAI.
+
+- Main page: the audit, a plain-language explanation of the meme, and an FAQ.
