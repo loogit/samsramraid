@@ -1,3 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/tiers";
-export default function sitemap(): MetadataRoute.Sitemap { return [{ url: SITE.url, changeFrequency: "daily", priority: 1 }]; }
+import { SIZES } from "./ram/[size]/page";
+export default function sitemap(): MetadataRoute.Sitemap {
+  return [{ url: SITE.url, changeFrequency: "daily", priority: 1 }, ...Object.keys(SIZES).map((s) => ({ url: `${SITE.url}/ram/${s}`, changeFrequency: "weekly" as const, priority: 0.7 }))];
+}

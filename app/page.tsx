@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
 import Audit from "./Audit";
-import { TIERS, cleanName } from "@/lib/tiers";
+import Link from "next/link";
+import { cleanName, fmtRam, gbParam, parseGb, tierOf } from "@/lib/tiers";
+import { SIZES } from "./ram/[size]/page";
 
 type SP = Promise<{ [k: string]: string | string[] | undefined }>;
 
 export async function generateMetadata({ searchParams }: { searchParams: SP }): Promise<Metadata> {
   const sp = await searchParams;
-  const t = TIERS.find((x) => x.id === sp.ram);
-  if (!t) return {};
+  const g = parseGb(sp.gb);
+  if (!g) return {};
+  const t = tierOf(g);
   const n = cleanName(sp.n);
-  const og = `/og?ram=${t.id}${n ? `&n=${encodeURIComponent(n)}` : ""}`;
-  const title = `${n || "Someone"} has ${t.label} of RAM: ${t.status}`;
+  const og = `/og?gb=${gbParam(g)}${n ? `&n=${encodeURIComponent(n)}` : ""}`;
+  const title = `${n || "Someone"} has ${fmtRam(g)} of RAM: ${t.status}`;
   return { title, openGraph: { title, images: [og] }, twitter: { card: "summary_large_image", title, images: [og] } };
 }
 
@@ -31,7 +34,8 @@ export default async function Page({ searchParams }: { searchParams: SP }) {
       <main className="wrap">
         <h1>Is Sam coming for your RAM?</h1>
         <p className="sub">Sam Altman reportedly called it &ldquo;quite terrible&rdquo; for normal people to keep RAM in their PCs. Confess your gigabytes. Get your official notice. Warn your friends.</p>
-        <Audit initialId={typeof sp.ram === "string" ? sp.ram : ""} initialName={cleanName(sp.n)} />
+        <p className="tldr"><strong>In short:</strong> Sam Altman reportedly said on the Cheeky Pint podcast that it is &ldquo;quite terrible&rdquo; for consumers to have RAM sitting idle in their PCs. This free parody site turns that into a hardware audit with a shareable fake seizure notice.</p>
+        <Audit initialGb={typeof sp.gb === "string" ? sp.gb : ""} initialName={cleanName(sp.n)} />
 
         <section>
           <h2 className="s">What actually happened</h2>
@@ -43,6 +47,8 @@ export default async function Page({ searchParams }: { searchParams: SP }) {
           <h2 className="s">Questions the strike team gets asked</h2>
           {FAQ.map(([q, a]) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}
         </section>
+
+        <section><h2 className="s">Verdicts by RAM size</h2><ul className="sizes">{Object.keys(SIZES).map((s) => <li key={s}><Link href={`/ram/${s}`}>{s} GB</Link></li>)}</ul></section>
 
         <footer>Satire. Not affiliated with OpenAI or Sam Altman. No scanning, no tracking, no data collected. Verdicts are fictional. Quotes are paraphrased from public reporting.</footer>
       </main>
