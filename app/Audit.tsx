@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { fakePct, fakeTotals } from "@/lib/fake";
 import { caseNo, cleanName, fmtRam, gbParam, parseGb, tierOf, util, wasted, type Ram } from "@/lib/tiers";
 
 const LINES = ["SCANNING DRAM CONTRACT PRICES...", "DETECTING WASTED GIGABYTES...", "MEASURING IDLE UTILIZATION: 95%... TERRIBLE", "CONTACTING OPENAI DATA CENTER RECON...", "CROSS-REFERENCING YOUR GAMING HISTORY...", "DRAFTING NOTICE OF HARDWARE SEIZURE..."];
@@ -21,13 +22,14 @@ export default function Audit({ initialGb = "", initialName = "" }: { initialGb?
   const [secs, setSecs] = useState(0);
   const [copied, setCopied] = useState(false);
   const [stats, setStats] = useState<Stats | null>(null);
+  const [origin, setOrigin] = useState("");
   const timers = useRef<number[]>([]);
   const n = cleanName(name);
   const typed = Number(val) > 0 ? Number(val) * F[unit] : null;
   const pick: Ram | null = mac ? "mac" : typed && typed <= 4096 ? typed : null;
   const t = g ? tierOf(g) : null;
 
-  useEffect(() => { fetch("/api/audit").then((r) => r.json()).then(setStats).catch(() => {}); return () => timers.current.forEach(clearTimeout); }, []);
+  useEffect(() => { setOrigin(location.origin); const tick = () => setStats(fakeTotals(Date.now())); tick(); const i = setInterval(tick, 2000); return () => { clearInterval(i); timers.current.forEach(clearTimeout); }; }, []);
   useEffect(() => {
     if (phase !== "result" || !t?.eta) return;
     setSecs(t.eta);
@@ -36,7 +38,7 @@ export default function Audit({ initialGb = "", initialName = "" }: { initialGb?
   }, [phase, t]);
 
   const qs = (x: Ram) => `gb=${gbParam(x)}${n ? `&n=${encodeURIComponent(n)}` : ""}`;
-  const link = (x: Ram) => `${location.origin}/?${qs(x)}`;
+  const link = (x: Ram) => `${origin}/?${qs(x)}`;
   const text = (x: Ram) => `${tierOf(x).post} ${fmtRam(x)} = "${tierOf(x).status}". Check yours before he finds you:`;
 
   function run() {
@@ -47,7 +49,6 @@ export default function Audit({ initialGb = "", initialName = "" }: { initialGb?
     timers.current.push(window.setTimeout(() => {
       setPhase("result");
       history.replaceState(null, "", link(x));
-      fetch("/api/audit", { method: "POST", body: JSON.stringify({ gb: x }) }).then((r) => r.json()).then(setStats).catch(() => {});
     }, LINES.length * 520 + 300));
   }
   async function copy(x: Ram) {
@@ -73,7 +74,7 @@ export default function Audit({ initialGb = "", initialName = "" }: { initialGb?
             <div><dt>Measured utilization</dt><dd>{util(g, n)}% (terrible)</dd></div>
             <div><dt>Wasted capacity</dt><dd>{wasted(g)}</dd></div>
             <div><dt>Strike team ETA</dt><dd>{t.eta ? fmt(secs) : "NEVER. Relax."}</dd></div>
-            {stats?.pct != null && t.id !== "mac" && <div><dt>Hoard ranking</dt><dd>More RAM than {stats.pct}% of audited machines</dd></div>}
+            {t.id !== "mac" && <div><dt>Hoard ranking</dt><dd>More RAM than {fakePct(g, n)}% of audited machines</dd></div>}
           </dl>
         </article>
         <div className="share">
@@ -106,7 +107,7 @@ export default function Audit({ initialGb = "", initialName = "" }: { initialGb?
           <label htmlFor="nm">Name for the warrant (optional)</label>
           <input id="nm" value={name} maxLength={24} onChange={(e) => setName(e.target.value)} placeholder="Your name or Reddit handle" autoComplete="off" />
           <button className="go" disabled={!pick} onClick={run}>AUDIT MY RAM</button>
-          {stats && stats.audits > 0 && <p className="counter">{stats.audits.toLocaleString()} machines audited &middot; {big(stats.gb)} of RAM confessed</p>}
+          {stats && stats.audits > 0 && <p className="counter">{stats.audits.toLocaleString()} machines audited &middot; {big(stats.gb)} of RAM confessed (per the Office of Memory Utilization)</p>}
         </>
       )}
     </div>

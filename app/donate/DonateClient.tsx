@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { fakeDonations } from "@/lib/fake";
 import { caseNo, cleanName, donorOf, fmtRam, gbParam, parseGb, tierOf } from "@/lib/tiers";
 
 const GOAL = 1048576;
@@ -14,8 +15,11 @@ export default function Donate({ gb, name }: { gb: string; name: string }) {
   const [copied, setCopied] = useState(false);
   const key = g ? `donated:${gbParam(g)}` : "";
   useEffect(() => {
-    fetch("/api/donate").then((r) => r.json()).then(setS).catch(() => {});
+    const tick = () => setS(fakeDonations(Date.now()));
+    tick();
+    const i = setInterval(tick, 2000);
     try { if (key && localStorage.getItem(key)) setDone(true); } catch {}
+    return () => clearInterval(i);
   }, [key]);
 
   const qs = g ? `gb=${gbParam(g)}${n ? `&n=${encodeURIComponent(n)}` : ""}` : "";
@@ -24,23 +28,21 @@ export default function Donate({ gb, name }: { gb: string; name: string }) {
   function confirm() {
     if (!g) return;
     setDone(true);
-    let seen = false;
-    try { seen = !!localStorage.getItem(key); localStorage.setItem(key, "1"); } catch {}
-    if (!seen) fetch("/api/donate", { method: "POST", body: JSON.stringify({ gb: g }) }).then((r) => r.json()).then(setS).catch(() => {});
+    try { localStorage.setItem(key, "1"); } catch {}
   }
   async function copy() { await navigator.clipboard?.writeText(`${text} ${link()}`); setCopied(true); setTimeout(() => setCopied(false), 2000); }
   async function share() { if (navigator.share) { try { await navigator.share({ text, url: link() }); return; } catch {} } copy(); }
   const t = g ? tierOf(g) : null;
-  const pct = s ? Math.min(100, (s.gb / GOAL) * 100) : 0;
+  const pct = s ? ((s.gb % GOAL) / GOAL) * 100 : 0;
 
   return (
     <section>
       <h2 className="s">Step 16: Confirm your donation</h2>
       {s && s.donors > 0 && (
         <div className="counterbox">
-          <p><strong>{big(s.gb)}</strong> donated by <strong>{s.donors.toLocaleString()}</strong> donors. Goal: 1 PB by Friday.</p>
+          <p><strong>{big(s.gb)}</strong> donated by <strong>{s.donors.toLocaleString()}</strong> donors. Goal: 1 PB by Friday. (Friday keeps moving.)</p>
           <div className="bar" role="progressbar" aria-valuenow={Math.round(pct)} aria-valuemin={0} aria-valuemax={100}><i style={{ width: `${Math.max(pct, 0.6)}%` }} /></div>
-          <p className="fine">Data center utilization improvement so far: +{(s.gb / 1e9).toFixed(8)}%. Sam's Cloud thanks you.</p>
+          <p className="fine">Data center utilization improvement so far: +{(s.gb / 1e9).toFixed(8)}%. All figures courtesy of the Office of Memory Utilization (fictional).</p>
         </div>
       )}
       {!g ? (
