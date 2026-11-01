@@ -69,3 +69,11 @@ footer{padding:30px 0 60px;color:var(--dim);font-size:14px;border-top:1px solid 
 .ps{font-size:calc(16px + var(--i)*3px);font-weight:700;margin:0 0 18px;color:color-mix(in srgb,#161616 calc(100% - var(--i)*10%),#c1121f)}
 .letter footer{color:#555;border-color:#161616;margin-top:40px}.letter a{color:#c1121f}
 @media (prefers-reduced-motion:reduce){.sticky{animation:none}}
+.notice{border:3px solid #ff2a2a;background:#1a0505;padding:16px;margin:0 0 30px}
+.need{padding-left:22px}.need li{margin:6px 0}
+.steps{list-style:none;counter-reset:s;padding:0;margin:0}
+.steps li{counter-increment:s;border-left:3px solid #39ff14;padding:0 0 26px 20px;margin-left:10px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:-17px;top:0;width:31px;height:31px;border-radius:50%;background:#39ff14;color:#000;font-weight:700;display:grid;place-items:center}
+.steps h3{font:400 26px/1.1 var(--meme);color:#fff;margin:0 0 6px}.steps p{margin:0 0 8px;max-width:64ch}.tip{color:var(--dim)}
+.counterbox{border:2px solid #39ff14;padding:16px;margin:0 0 24px}.counterbox p{margin:0 0 10px}
+.bar{height:16px;border:2px solid #39ff14}.bar i{display:block;height:100%;background:#39ff14}

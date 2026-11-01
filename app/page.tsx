@@ -36,6 +36,7 @@ export default async function Page({ searchParams }: { searchParams: SP }) {
         <p className="sub">Sam Altman reportedly called it &ldquo;quite terrible&rdquo; for normal people to keep RAM in their PCs. Confess your gigabytes. Get your official notice. Warn your friends.</p>
         <p className="tldr"><strong>In short:</strong> Sam Altman reportedly said on the Cheeky Pint podcast that it is &ldquo;quite terrible&rdquo; for consumers to have RAM sitting idle in their PCs. This free parody site turns that into a hardware audit with a shareable fake seizure notice.</p>
         <Audit initialGb={typeof sp.gb === "string" ? sp.gb : ""} initialName={cleanName(sp.n)} />
+        <p className="sub" style={{ marginTop: 22 }}><Link href="/letter">Read the letter Sam sent</Link> &middot; <Link href="/donate">Donate your RAM to Sam&apos;s Cloud</Link></p>
 
         <section>
           <h2 className="s">What actually happened</h2>

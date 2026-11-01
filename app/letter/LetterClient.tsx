@@ -37,6 +37,7 @@ export function Order() {
         <div className="share">
           <a href={`https://twitter.com/intent/tweet?text=${post}&url=${encodeURIComponent(location.origin + "/letter")}`} target="_blank" rel="noopener">Brag on X</a>
           <button onClick={() => navigator.clipboard?.writeText(`${location.origin}/letter`)}>Copy link to the letter</button>
+          <a href={"/donate" + location.search}>Donate your RAM instead</a>
           <a href="/">Back to the audit</a>
         </div>
       </div>

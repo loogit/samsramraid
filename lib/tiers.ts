@@ -35,3 +35,5 @@ export const hash = (s: string) => { let h = 2166136261; for (const c of s) { h 
 export const caseNo = (g: Ram, n: string) => `ALT-${(hash(gbParam(g) + n) % 900000) + 100000}`;
 export const util = (g: Ram, n: string) => (4 + (hash(n + gbParam(g)) % 10) / 10).toFixed(1);
 export const cleanName = (v?: string | string[]) => (typeof v === "string" ? v.replace(/[^\p{L}\p{N} ._'-]/gu, "").slice(0, 24).trim() : "");
+export const DONOR: Record<string, string> = { retro: "HONORARY MUSEUM DONOR", "8": "BRONZE CONTRIBUTOR", "16": "SILVER CONTRIBUTOR", "32": "GOLD BENEFACTOR", "64": "PLATINUM BENEFACTOR", "128": "FOUNDING BENEFACTOR", "256": "ARCHDUKE OF IDLE CAPACITY", mac: "ANONYMOUS BENEFACTOR (UNAWARE)" };
+export const donorOf = (t: Tier) => DONOR[t.id];

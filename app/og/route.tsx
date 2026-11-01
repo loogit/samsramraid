@@ -1,21 +1,22 @@
 import { ImageResponse } from "next/og";
-import { caseNo, cleanName, fmtRam, parseGb, tierOf } from "@/lib/tiers";
+import { caseNo, cleanName, donorOf, fmtRam, parseGb, tierOf } from "@/lib/tiers";
 
 export async function GET(req: Request) {
   const u = new URL(req.url);
   const g = parseGb(u.searchParams.get("gb") ?? undefined);
   const t = g ? tierOf(g) : null;
   const n = cleanName(u.searchParams.get("n") ?? undefined);
+  const cert = u.searchParams.get("cert");
   const c = t?.color ?? "#39ff14";
   const img = new ImageResponse(
     (
       <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", background: "#050805", color: c, padding: 56, fontFamily: "monospace", border: `14px solid ${c}` }}>
-        <div style={{ display: "flex", fontSize: 28, color: "#9aa59a" }}>{t && g ? `NOTICE OF HARDWARE UTILIZATION REVIEW  ${caseNo(g, n)}` : "THE ALTMAN UTILIZATION AUDIT"}</div>
+        <div style={{ display: "flex", fontSize: 28, color: "#9aa59a" }}>{t && g ? `${cert ? "CERTIFICATE OF DONATION" : "NOTICE OF HARDWARE UTILIZATION REVIEW"}  ${caseNo(g, n)}` : "THE ALTMAN UTILIZATION AUDIT"}</div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           {t && g ? (
             <>
-              <div style={{ display: "flex", fontSize: 34, color: "#e8efe8" }}>{`SUBJECT: ${n || "ANONYMOUS HOARDER"} / ${fmtRam(g)}`}</div>
-              <div style={{ display: "flex", fontSize: t.status.length > 22 ? 70 : 92, fontWeight: 800, lineHeight: 1.05, marginTop: 18 }}>{t.status}</div>
+              <div style={{ display: "flex", fontSize: 34, color: "#e8efe8" }}>{cert ? `DONOR: ${n || "ANONYMOUS"} / DONATED ${fmtRam(g)} TO SAM'S CLOUD` : `SUBJECT: ${n || "ANONYMOUS HOARDER"} / ${fmtRam(g)}`}</div>
+              <div style={{ display: "flex", fontSize: (cert ? donorOf(t) : t.status).length > 22 ? 70 : 92, fontWeight: 800, lineHeight: 1.05, marginTop: 18 }}>{cert ? donorOf(t) : t.status}</div>
             </>
           ) : (
             <>

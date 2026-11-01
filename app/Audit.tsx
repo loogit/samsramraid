@@ -80,6 +80,7 @@ export default function Audit({ initialGb = "", initialName = "" }: { initialGb?
           <button className="big" onClick={() => share(g)}>WARN MY FRIENDS BEFORE SAM FINDS THEM</button>
           <a href={`/og?${qs(g)}&dl=1`} download="altman-warrant.png">Download warrant image</a>
           <a href={`/letter?${qs(g)}`}>Sam sent you a letter. Read it.</a>
+          <a href={`/donate?${qs(g)}`}>Donate my RAM to Sam's Cloud</a>
           <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(text(g))}&url=${encodeURIComponent(link(g))}`} target="_blank" rel="noopener">Post on X</a>
           <a href={`https://www.reddit.com/submit?url=${encodeURIComponent(link(g))}&title=${encodeURIComponent(`${tierOf(g).post} (${fmtRam(g)}: "${t.status}")`)}`} target="_blank" rel="noopener">Post on Reddit</a>
           <button onClick={() => copy(g)}>{copied ? "Copied. Spread it." : "Copy link"}</button>
