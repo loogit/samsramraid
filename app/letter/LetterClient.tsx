@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import BSOD from "../BSOD";
 
 const START = 14 * 60 + 59;
 const mmss = (s: number) => `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
@@ -27,7 +28,22 @@ const BOXES = [
 
 export function Order() {
   const [done, setDone] = useState(false);
+  const [showBSOD, setShowBSOD] = useState(false);
   const post = encodeURIComponent("I made it to the end of the RAM sales letter. I did not surrender my DIMMs. Read it if you dare:");
+
+  const handleDonateClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setShowBSOD(true);
+  };
+
+  const handleBSODComplete = () => {
+    // Use setTimeout to ensure state update happens after the callback returns
+    setTimeout(() => {
+      setShowBSOD(false);
+      alert("Reboot successful. Local memory fully cleared. Sam Altman thanks you for your 100% utilization sacrifice.");
+    }, 0);
+  };
+
   if (done)
     return (
       <div className="order">
@@ -37,9 +53,10 @@ export function Order() {
         <div className="share">
           <a href={`https://twitter.com/intent/tweet?text=${post}&url=${encodeURIComponent(location.origin + "/letter")}`} target="_blank" rel="noopener">Brag on X</a>
           <button onClick={() => navigator.clipboard?.writeText(`${location.origin}/letter`)}>Copy link to the letter</button>
-          <a href={"/donate" + location.search}>Donate your RAM instead</a>
+          <a href={"/donate" + location.search} onClick={handleDonateClick} style={{ cursor: "pointer", color: "var(--c)" }}>Donate your RAM instead</a>
           <a href="/">Back to the audit</a>
         </div>
+        <BSOD isVisible={showBSOD} onComplete={handleBSODComplete} />
       </div>
     );
   return (

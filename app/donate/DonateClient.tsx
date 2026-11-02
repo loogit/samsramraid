@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { fakeDonations } from "@/lib/fake";
 import { caseNo, cleanName, donorOf, fmtRam, gbParam, parseGb, tierOf } from "@/lib/tiers";
+import BSOD from "../BSOD";
 
 const GOAL = 1048576;
 const big = (g: number) => (g >= 1048576 ? `${(g / 1048576).toFixed(2)} PB` : g >= 1024 ? `${(g / 1024).toFixed(1)} TB` : `${Math.round(g)} GB`);
@@ -12,6 +13,7 @@ export default function Donate({ gb, name }: { gb: string; name: string }) {
   const n = cleanName(name);
   const [s, setS] = useState<S | null>(null);
   const [done, setDone] = useState(false);
+  const [showBSOD, setShowBSOD] = useState(false);
   const [copied, setCopied] = useState(false);
   const key = g ? `donated:${gbParam(g)}` : "";
   useEffect(() => {
@@ -27,8 +29,16 @@ export default function Donate({ gb, name }: { gb: string; name: string }) {
   const link = () => `${location.origin}/donate?${qs}`;
   function confirm() {
     if (!g) return;
-    setDone(true);
-    try { localStorage.setItem(key, "1"); } catch {}
+    setShowBSOD(true);
+  }
+  const handleBSODComplete = () => {
+    // Use setTimeout to ensure state update happens after the callback returns
+    setTimeout(() => {
+      setShowBSOD(false);
+      setDone(true);
+      try { localStorage.setItem(key, "1"); } catch {}
+      alert("Reboot successful. Local memory fully cleared. Sam Altman thanks you for your 100% utilization sacrifice.");
+    }, 0);
   }
   async function copy() { await navigator.clipboard?.writeText(`${text} ${link()}`); setCopied(true); setTimeout(() => setCopied(false), 2000); }
   async function share() { if (navigator.share) { try { await navigator.share({ text, url: link() }); return; } catch {} } copy(); }
@@ -71,6 +81,7 @@ export default function Donate({ gb, name }: { gb: string; name: string }) {
           </div>
         </div>
       )}
+      <BSOD isVisible={showBSOD} onComplete={handleBSODComplete} />
     </section>
   );
 }
