@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": 1,
-    "nodeCount": 71,
-    "edgeCount": 171,
+    "nodeCount": 91,
+    "edgeCount": 204,
     "languages": [
       "tsx",
       "typescript"
@@ -188,16 +188,185 @@
       "crux": null
     },
     {
+      "id": "app/BSOD.tsx",
+      "name": "BSOD.tsx",
+      "kind": "file",
+      "path": "app/BSOD.tsx",
+      "span": "L1-L638",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "5ff71cd6eb931025db3d59df02e19a4b4fb71b783d16e61c81efeed9f52cc8b4",
+      "chars": 24809,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/BSOD.tsx#BSOD",
+      "name": "BSOD",
+      "kind": "function",
+      "path": "app/BSOD.tsx",
+      "span": "L136-L638",
+      "signature": "function BSOD({ isVisible, onComplete }: { isVisible: boolean; onComplete: () => void })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "c69f495d62c51a5a4be9fb4890eaf33379f66a1b5d98d04d056812dce06b4456",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/BSOD.tsx#BSOD.clearAllIntervals",
+      "name": "clearAllIntervals",
+      "kind": "function",
+      "path": "app/BSOD.tsx",
+      "span": "L200-L203",
+      "signature": "clearAllIntervals = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "83e4cba43166e3c97f7ec6b675242b2fa0e9979062732416d978d59813dce6ca",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/BSOD.tsx#BSOD.handleMemoryMapStuck",
+      "name": "handleMemoryMapStuck",
+      "kind": "function",
+      "path": "app/BSOD.tsx",
+      "span": "L258-L312",
+      "signature": "handleMemoryMapStuck = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "90a3fe6df159ecd60bb5a1133a89a95b3503a067b10ea77d0819a35669d65b78",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/BSOD.tsx#BSOD.handleMemoryMapStuck.showThinking",
+      "name": "showThinking",
+      "kind": "function",
+      "path": "app/BSOD.tsx",
+      "span": "L285-L310",
+      "signature": "showThinking = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "1b2f370aac3a8ed50d023b7e61182d5a044f48b80866cc7aac1207b6ed68d297",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/BSOD.tsx#BSOD.handleMemoryMapStuck.showThinking.intenseFlash",
+      "name": "intenseFlash",
+      "kind": "function",
+      "path": "app/BSOD.tsx",
+      "span": "L296-L307",
+      "signature": "intenseFlash = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "f1ee2c2b114b4c7d192a731daf5aec9ffb815c97e2c38c5d1499873afcad474a",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/BSOD.tsx#BSOD.runBSOD",
+      "name": "runBSOD",
+      "kind": "function",
+      "path": "app/BSOD.tsx",
+      "span": "L314-L344",
+      "signature": "runBSOD = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "19acc99c4d0c503ee6359fb597085de7eb4e9f863e2076bcd80d5bd79bff4e7c",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/BSOD.tsx#BSOD.runBSOD.tick",
+      "name": "tick",
+      "kind": "function",
+      "path": "app/BSOD.tsx",
+      "span": "L320-L342",
+      "signature": "tick = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "290037607491704d49bec89ba8a8e0226d19dadedc1572bfe3d985653fae3ff5",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/BSOD.tsx#BSOD.runPhase",
+      "name": "runPhase",
+      "kind": "function",
+      "path": "app/BSOD.tsx",
+      "span": "L205-L256",
+      "signature": "runPhase = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "588c5986188f51d5762a097a76c31ca48bfc1f742ed36d7fa6f6ef5ac0bb064c",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/BSOD.tsx#BSOD.runPhase.tick",
+      "name": "tick",
+      "kind": "function",
+      "path": "app/BSOD.tsx",
+      "span": "L237-L254",
+      "signature": "tick = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "2712cc4296a2fa7f143fa008c12b660a9c8649c79be5f123e094804ee78b729e",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/BSOD.tsx#BSOD.runPhase.typeLine",
+      "name": "typeLine",
+      "kind": "function",
+      "path": "app/BSOD.tsx",
+      "span": "L224-L233",
+      "signature": "typeLine = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "a379fd2a1ec176d68451bd46bff92a619c413fdf5a2ae3744b7c66c15a5bde7b",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/BSOD.tsx#Phase",
+      "name": "Phase",
+      "kind": "type",
+      "path": "app/BSOD.tsx",
+      "span": "L4-L4",
+      "signature": "type Phase = \"idle\" | \"bios\" | \"memory_map\" | \"ecc_check\" | \"thermal_scan\" | \"firmware_handshake\" | \"dma_transfer\" | \"cloud_negotiation\" | \"finalizing\" | \"critical_failure\" | \"bsod\" | \"complete\";",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "3ba2416162e6a4f8cb8f2fab4befe415292c9eca2e85b6b4153041f227352571",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
       "id": "app/donate/DonateClient.tsx",
       "name": "DonateClient.tsx",
       "kind": "file",
       "path": "app/donate/DonateClient.tsx",
-      "span": "L1-L77",
+      "span": "L1-L88",
       "signature": null,
       "exported": true,
       "origin": "ast",
-      "body_hash": "aabf866f9452f2a07f7203b4411c131e889ad9e6e88b659fdd1ccd66502cf2fe",
-      "chars": 4360,
+      "body_hash": "e19254a0760f010210ab2cce62b1e36574bb854667d17d72443a61dccb3ebe13",
+      "chars": 4837,
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -207,7 +376,7 @@
       "name": "big",
       "kind": "function",
       "path": "app/donate/DonateClient.tsx",
-      "span": "L7-L7",
+      "span": "L8-L8",
       "signature": "big = (g: number)",
       "exported": false,
       "origin": "ast",
@@ -221,11 +390,11 @@
       "name": "Donate",
       "kind": "function",
       "path": "app/donate/DonateClient.tsx",
-      "span": "L10-L76",
+      "span": "L11-L87",
       "signature": "function Donate({ gb, name }: { gb: string; name: string })",
       "exported": true,
       "origin": "ast",
-      "body_hash": "69536b4676cd2c368717b798c2a7df56fcfcc50f29dfdcba2a5f43b1e705f513",
+      "body_hash": "1aa63546a274fbc2d6445fe2488305e37820b00fc48256702862fb578e85df7f",
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -235,11 +404,11 @@
       "name": "confirm",
       "kind": "function",
       "path": "app/donate/DonateClient.tsx",
-      "span": "L28-L32",
+      "span": "L30-L33",
       "signature": "function confirm()",
       "exported": true,
       "origin": "ast",
-      "body_hash": "d175106dc1ef66637dd96b1e04877bb05c6ce559f574fa346d07e18a2a6ca13c",
+      "body_hash": "636389ea528ee9f9a2a726024d28261124ee0e0b23b0da038699a9ace6c6f3a6",
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -249,7 +418,7 @@
       "name": "copy",
       "kind": "function",
       "path": "app/donate/DonateClient.tsx",
-      "span": "L33-L33",
+      "span": "L43-L43",
       "signature": "async function copy()",
       "exported": true,
       "origin": "ast",
@@ -259,11 +428,25 @@
       "crux": null
     },
     {
+      "id": "app/donate/DonateClient.tsx#Donate.handleBSODComplete",
+      "name": "handleBSODComplete",
+      "kind": "function",
+      "path": "app/donate/DonateClient.tsx",
+      "span": "L34-L42",
+      "signature": "handleBSODComplete = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "e3391082214d03b8ac376fccd17f3ed522a5751d04abc18118d175234a260856",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
       "id": "app/donate/DonateClient.tsx#Donate.link",
       "name": "link",
       "kind": "function",
       "path": "app/donate/DonateClient.tsx",
-      "span": "L27-L27",
+      "span": "L29-L29",
       "signature": "link = ()",
       "exported": true,
       "origin": "ast",
@@ -277,7 +460,7 @@
       "name": "share",
       "kind": "function",
       "path": "app/donate/DonateClient.tsx",
-      "span": "L34-L34",
+      "span": "L44-L44",
       "signature": "async function share()",
       "exported": true,
       "origin": "ast",
@@ -291,7 +474,7 @@
       "name": "tick",
       "kind": "function",
       "path": "app/donate/DonateClient.tsx",
-      "span": "L18-L18",
+      "span": "L20-L20",
       "signature": "tick = ()",
       "exported": true,
       "origin": "ast",
@@ -305,7 +488,7 @@
       "name": "S",
       "kind": "type",
       "path": "app/donate/DonateClient.tsx",
-      "span": "L8-L8",
+      "span": "L9-L9",
       "signature": "type S = { donors: number; gb: number };",
       "exported": false,
       "origin": "ast",
@@ -372,16 +555,73 @@
       "crux": null
     },
     {
+      "id": "app/HomeClient.tsx",
+      "name": "HomeClient.tsx",
+      "kind": "file",
+      "path": "app/HomeClient.tsx",
+      "span": "L1-L84",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "c3f5e9b780965e641170e6cdf09c2aa97e758ee6f29f9f6377415f5baf8dcf31",
+      "chars": 5391,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/HomeClient.tsx#HomeClient",
+      "name": "HomeClient",
+      "kind": "function",
+      "path": "app/HomeClient.tsx",
+      "span": "L7-L74",
+      "signature": "function HomeClient({ initialGb = \"\", initialName = \"\" }: { initialGb?: string; initialName?: string })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "54b7042ed5a991cf5cb8db0994f0be24ccc6088f13952ebdeb9f27183db73e0f",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/HomeClient.tsx#HomeClient.handleBSODComplete",
+      "name": "handleBSODComplete",
+      "kind": "function",
+      "path": "app/HomeClient.tsx",
+      "span": "L15-L21",
+      "signature": "handleBSODComplete = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "204507d1ae9851068b672d5f130541df88e91dcbf7f4466ff4f4f35ebb98679a",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/HomeClient.tsx#HomeClient.handleDonateClick",
+      "name": "handleDonateClick",
+      "kind": "function",
+      "path": "app/HomeClient.tsx",
+      "span": "L10-L13",
+      "signature": "handleDonateClick = (e: React.MouseEvent<HTMLAnchorElement>)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "cbbd4e87df807452deef7fa88484ebe6f0bd0f3cd341afa1caf661aa92075773",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
       "id": "app/layout.tsx",
       "name": "layout.tsx",
       "kind": "file",
       "path": "app/layout.tsx",
-      "span": "L1-L38",
+      "span": "L1-L58",
       "signature": null,
       "exported": true,
       "origin": "ast",
-      "body_hash": "8fb2edd1e1ea74cf168046d9981a1f62d4a317a6436315001645773cc02fcdfd",
-      "chars": 1658,
+      "body_hash": "4f612d1919fe76d01bd0887708629929815f3e186a89de3b1ed3ae9f99f5bad8",
+      "chars": 2306,
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -391,11 +631,11 @@
       "name": "RootLayout",
       "kind": "function",
       "path": "app/layout.tsx",
-      "span": "L17-L37",
+      "span": "L19-L57",
       "signature": "function RootLayout({ children }: { children: React.ReactNode })",
       "exported": true,
       "origin": "ast",
-      "body_hash": "d2151af70aaee7e7ced3a20afbbc244aaf700f8e347f184599b84738dc64cb8d",
+      "body_hash": "3bacce1101a989fe68c818cae0b3727e3031d0efb9e7e88df8b56e1613d1cb5b",
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -405,12 +645,12 @@
       "name": "LetterClient.tsx",
       "kind": "file",
       "path": "app/letter/LetterClient.tsx",
-      "span": "L1-L54",
+      "span": "L1-L71",
       "signature": null,
       "exported": true,
       "origin": "ast",
-      "body_hash": "c3de97cf0285c8dfe6aaf01f2c744ec022a220ebc4a3545cd7a7da3c01b7ee84",
-      "chars": 2493,
+      "body_hash": "2ab3d3720b6cd8d0d1f4d025dcc72502f3a1c166b259e0396e756dd156b0b9ab",
+      "chars": 3152,
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -420,7 +660,7 @@
       "name": "mmss",
       "kind": "function",
       "path": "app/letter/LetterClient.tsx",
-      "span": "L5-L5",
+      "span": "L6-L6",
       "signature": "mmss = (s: number)",
       "exported": false,
       "origin": "ast",
@@ -434,11 +674,39 @@
       "name": "Order",
       "kind": "function",
       "path": "app/letter/LetterClient.tsx",
-      "span": "L28-L53",
+      "span": "L29-L70",
       "signature": "function Order()",
       "exported": true,
       "origin": "ast",
-      "body_hash": "da525753133b6b17a8a65c26f9521e30f6f114d23f30d5098ebb71ca454f4c10",
+      "body_hash": "81cb0fe82b974affc2503391440e1e939e075ea283b778af273f058be8c6abe3",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/letter/LetterClient.tsx#Order.handleBSODComplete",
+      "name": "handleBSODComplete",
+      "kind": "function",
+      "path": "app/letter/LetterClient.tsx",
+      "span": "L39-L45",
+      "signature": "handleBSODComplete = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "204507d1ae9851068b672d5f130541df88e91dcbf7f4466ff4f4f35ebb98679a",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/letter/LetterClient.tsx#Order.handleDonateClick",
+      "name": "handleDonateClick",
+      "kind": "function",
+      "path": "app/letter/LetterClient.tsx",
+      "span": "L34-L37",
+      "signature": "handleDonateClick = (e: React.MouseEvent<HTMLAnchorElement>)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "cbbd4e87df807452deef7fa88484ebe6f0bd0f3cd341afa1caf661aa92075773",
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -448,7 +716,7 @@
       "name": "Timer",
       "kind": "function",
       "path": "app/letter/LetterClient.tsx",
-      "span": "L7-L19",
+      "span": "L8-L20",
       "signature": "function Timer()",
       "exported": true,
       "origin": "ast",
@@ -576,12 +844,12 @@
       "name": "page.tsx",
       "kind": "file",
       "path": "app/page.tsx",
-      "span": "L1-L60",
+      "span": "L1-L21",
       "signature": null,
       "exported": true,
       "origin": "ast",
-      "body_hash": "69463cbdcb0a4f4dbcd2fb5bec114f207809838a1c9eb8bfef609749e22b0b9b",
-      "chars": 5284,
+      "body_hash": "abebe8f676e06e2c4a47d9ba5341ba8b63f9184e271b5d9704a3837a07b0d238",
+      "chars": 946,
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -591,7 +859,7 @@
       "name": "generateMetadata",
       "kind": "function",
       "path": "app/page.tsx",
-      "span": "L9-L18",
+      "span": "L7-L16",
       "signature": "async function generateMetadata({ searchParams }: { searchParams: SP }): Promise<Metadata>",
       "exported": true,
       "origin": "ast",
@@ -605,11 +873,11 @@
       "name": "Page",
       "kind": "function",
       "path": "app/page.tsx",
-      "span": "L28-L59",
+      "span": "L18-L21",
       "signature": "async function Page({ searchParams }: { searchParams: SP })",
       "exported": true,
       "origin": "ast",
-      "body_hash": "0cf43c5d63ea2498c11260afdad84b4416197f364c2e6ee17d99383146cfd3d0",
+      "body_hash": "307585a8595e12fac23af73a5808656fe07b1aea82ff9de536945cfc6d2089d4",
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -619,7 +887,7 @@
       "name": "SP",
       "kind": "type",
       "path": "app/page.tsx",
-      "span": "L7-L7",
+      "span": "L5-L5",
       "signature": "type SP = Promise<{ [k: string]: string | string[] | undefined }>;",
       "exported": false,
       "origin": "ast",
@@ -633,12 +901,12 @@
       "name": "page.tsx",
       "kind": "file",
       "path": "app/ram/[size]/page.tsx",
-      "span": "L1-L46",
+      "span": "L1-L35",
       "signature": null,
       "exported": true,
       "origin": "ast",
-      "body_hash": "4a81f532e0b0651a5b4284f68db74b7442ce03ed2472fb91ed62cecf5607c1ad",
-      "chars": 3636,
+      "body_hash": "fb7d66b36c24878bf7cba3abac5be68c9e87d9202911b5c5ad2d1f1560e4c5df",
+      "chars": 2230,
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -648,7 +916,7 @@
       "name": "generateMetadata",
       "kind": "function",
       "path": "app/ram/[size]/page.tsx",
-      "span": "L20-L25",
+      "span": "L9-L14",
       "signature": "async function generateMetadata({ params }: { params: Promise<{ size: string }> }): Promise<Metadata>",
       "exported": true,
       "origin": "ast",
@@ -662,7 +930,7 @@
       "name": "generateStaticParams",
       "kind": "function",
       "path": "app/ram/[size]/page.tsx",
-      "span": "L18-L18",
+      "span": "L7-L7",
       "signature": "generateStaticParams = ()",
       "exported": true,
       "origin": "ast",
@@ -676,7 +944,7 @@
       "name": "Page",
       "kind": "function",
       "path": "app/ram/[size]/page.tsx",
-      "span": "L27-L45",
+      "span": "L16-L34",
       "signature": "async function Page({ params }: { params: Promise<{ size: string }> })",
       "exported": true,
       "origin": "ast",
@@ -723,8 +991,8 @@
       "signature": null,
       "exported": true,
       "origin": "ast",
-      "body_hash": "34ea97ac20776112a8b00ae8114cb56b9be9c754da7ada04903fb61be2627c46",
-      "chars": 538,
+      "body_hash": "7d01ac26f7ffb5b5a54a23ef94d8f317e279a8e2af004bf3285270dc95040a75",
+      "chars": 532,
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -810,6 +1078,21 @@
       "exported": false,
       "origin": "ast",
       "body_hash": "1f2e561a11b6a1abc49d66cf8d8e752853b7b407c34e6ab1497c000d5b4319d3",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/sizes.ts",
+      "name": "sizes.ts",
+      "kind": "file",
+      "path": "lib/sizes.ts",
+      "span": "L1-L12",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "191ddd10141ffae739f766cddf1e00c55a14461197a3c7e018bc201c505587e3",
+      "chars": 1442,
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -1276,6 +1559,120 @@
       "confidence": "inferred"
     },
     {
+      "source": "app/BSOD.tsx",
+      "target": "app/BSOD.tsx#BSOD",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx",
+      "target": "app/BSOD.tsx#Phase",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD",
+      "target": "app/BSOD.tsx#BSOD.clearAllIntervals",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD",
+      "target": "app/BSOD.tsx#BSOD.runPhase",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD",
+      "target": "app/BSOD.tsx#BSOD.clearAllIntervals",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD",
+      "target": "app/BSOD.tsx#BSOD.handleMemoryMapStuck",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD",
+      "target": "app/BSOD.tsx#BSOD.runBSOD",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD",
+      "target": "app/BSOD.tsx#BSOD.runPhase",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD.handleMemoryMapStuck",
+      "target": "app/BSOD.tsx#BSOD.handleMemoryMapStuck.showThinking",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD.handleMemoryMapStuck",
+      "target": "app/BSOD.tsx#BSOD.handleMemoryMapStuck.showThinking",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD.handleMemoryMapStuck.showThinking",
+      "target": "app/BSOD.tsx#BSOD.handleMemoryMapStuck.showThinking.intenseFlash",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD.handleMemoryMapStuck.showThinking",
+      "target": "app/BSOD.tsx#BSOD.handleMemoryMapStuck.showThinking.intenseFlash",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD.runBSOD",
+      "target": "app/BSOD.tsx#BSOD.runBSOD.tick",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD.runPhase",
+      "target": "app/BSOD.tsx#BSOD.runBSOD",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD.runPhase",
+      "target": "app/BSOD.tsx#BSOD.runPhase.typeLine",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD.runPhase",
+      "target": "app/BSOD.tsx#BSOD.runPhase.tick",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD.runPhase",
+      "target": "app/BSOD.tsx#BSOD.runPhase.typeLine",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/BSOD.tsx#BSOD.runPhase.tick",
+      "target": "app/BSOD.tsx#BSOD.handleMemoryMapStuck",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
       "source": "app/donate/DonateClient.tsx",
       "target": "app/donate/DonateClient.tsx#big",
       "relation": "contains",
@@ -1302,6 +1699,12 @@
     {
       "source": "app/donate/DonateClient.tsx",
       "target": "@/lib/tiers",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx",
+      "target": "app/BSOD.tsx",
       "relation": "imports",
       "confidence": "extracted"
     },
@@ -1380,6 +1783,12 @@
     {
       "source": "app/donate/DonateClient.tsx#Donate",
       "target": "app/donate/DonateClient.tsx#Donate.copy",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "app/donate/DonateClient.tsx#Donate.handleBSODComplete",
       "relation": "contains",
       "confidence": "extracted"
     },
@@ -1504,6 +1913,54 @@
       "confidence": "inferred"
     },
     {
+      "source": "app/HomeClient.tsx",
+      "target": "app/HomeClient.tsx#HomeClient",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/HomeClient.tsx",
+      "target": "@/lib/sizes",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/HomeClient.tsx",
+      "target": "app/Audit.tsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/HomeClient.tsx",
+      "target": "app/BSOD.tsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/HomeClient.tsx",
+      "target": "next/link",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/HomeClient.tsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/HomeClient.tsx#HomeClient",
+      "target": "app/HomeClient.tsx#HomeClient.handleBSODComplete",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/HomeClient.tsx#HomeClient",
+      "target": "app/HomeClient.tsx#HomeClient.handleDonateClick",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
       "source": "app/layout.tsx",
       "target": "app/layout.tsx#RootLayout",
       "relation": "contains",
@@ -1523,7 +1980,19 @@
     },
     {
       "source": "app/layout.tsx",
+      "target": "@vercel/analytics/next",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/layout.tsx",
       "target": "next",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/layout.tsx",
+      "target": "next/script",
       "relation": "imports",
       "confidence": "extracted"
     },
@@ -1547,8 +2016,26 @@
     },
     {
       "source": "app/letter/LetterClient.tsx",
+      "target": "app/BSOD.tsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/LetterClient.tsx",
       "target": "react",
       "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/LetterClient.tsx#Order",
+      "target": "app/letter/LetterClient.tsx#Order.handleBSODComplete",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/LetterClient.tsx#Order",
+      "target": "app/letter/LetterClient.tsx#Order.handleDonateClick",
+      "relation": "contains",
       "confidence": "extracted"
     },
     {
@@ -1733,25 +2220,13 @@
     },
     {
       "source": "app/page.tsx",
-      "target": "app/Audit.tsx",
-      "relation": "imports",
-      "confidence": "extracted"
-    },
-    {
-      "source": "app/page.tsx",
-      "target": "app/ram/[size]/page.tsx",
+      "target": "app/HomeClient.tsx",
       "relation": "imports",
       "confidence": "extracted"
     },
     {
       "source": "app/page.tsx",
       "target": "next",
-      "relation": "imports",
-      "confidence": "extracted"
-    },
-    {
-      "source": "app/page.tsx",
-      "target": "next/link",
       "relation": "imports",
       "confidence": "extracted"
     },
@@ -1811,6 +2286,12 @@
     },
     {
       "source": "app/ram/[size]/page.tsx",
+      "target": "@/lib/sizes",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/ram/[size]/page.tsx",
       "target": "@/lib/tiers",
       "relation": "imports",
       "confidence": "extracted"
@@ -1859,13 +2340,13 @@
     },
     {
       "source": "app/sitemap.ts",
-      "target": "@/lib/tiers",
+      "target": "@/lib/sizes",
       "relation": "imports",
       "confidence": "extracted"
     },
     {
       "source": "app/sitemap.ts",
-      "target": "app/ram/[size]/page.tsx",
+      "target": "@/lib/tiers",
       "relation": "imports",
       "confidence": "extracted"
     },

@@ -1,5 +1,5 @@
 # app/ram/[size]/page.tsx
 
-- generateStaticParams · function · L18-L18 — generateStaticParams = ()
-- generateMetadata · function · L20-L25 — async function generateMetadata({ params }: { params: Promise<{ size: string }> }): Promise<Metadata>
-- Page · function · L27-L45 — async function Page({ params }: { params: Promise<{ size: string }> })
+- generateStaticParams · function · L7-L7 — generateStaticParams = ()
+- generateMetadata · function · L9-L14 — async function generateMetadata({ params }: { params: Promise<{ size: string }> }): Promise<Metadata>
+- Page · function · L16-L34 — async function Page({ params }: { params: Promise<{ size: string }> })
