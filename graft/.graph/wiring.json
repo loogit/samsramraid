@@ -1,0 +1,2059 @@
+{
+  "meta": {
+    "version": 1,
+    "nodeCount": 71,
+    "edgeCount": 171,
+    "languages": [
+      "tsx",
+      "typescript"
+    ],
+    "scopes": [
+      {
+        "prefix": "",
+        "label": "",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "app/Audit.tsx",
+      "name": "Audit.tsx",
+      "kind": "file",
+      "path": "app/Audit.tsx",
+      "span": "L1-L116",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "06a5e24d40013c3213d60b9c64e52d32cbcf28b2d470c963053cf069a2729664",
+      "chars": 6970,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/Audit.tsx#Audit",
+      "name": "Audit",
+      "kind": "function",
+      "path": "app/Audit.tsx",
+      "span": "L13-L115",
+      "signature": "function Audit({ initialGb = \"\", initialName = \"\" }: { initialGb?: string; initialName?: string })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "2078e4b9fdcac12db5cfa81fe27ce1b3d0a411ecedeeff884f7ca20f45ad696a",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/Audit.tsx#Audit.copy",
+      "name": "copy",
+      "kind": "function",
+      "path": "app/Audit.tsx",
+      "span": "L54-L57",
+      "signature": "async function copy(x: Ram)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "f6ae81b37548ff5292dac9d25d8aae51102bed5c03bf404d40a0e451d68704da",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/Audit.tsx#Audit.link",
+      "name": "link",
+      "kind": "function",
+      "path": "app/Audit.tsx",
+      "span": "L41-L41",
+      "signature": "link = (x: Ram)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "f9e5cb3dcee586af66094389eb7d3801a18d4de34251e8914d3449f996a452dc",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/Audit.tsx#Audit.qs",
+      "name": "qs",
+      "kind": "function",
+      "path": "app/Audit.tsx",
+      "span": "L40-L40",
+      "signature": "qs = (x: Ram)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "303de24e61c230ef8f491ec9a9bffb21b8b1f8f18f5d8f877ba6c78c424e26b6",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/Audit.tsx#Audit.run",
+      "name": "run",
+      "kind": "function",
+      "path": "app/Audit.tsx",
+      "span": "L44-L53",
+      "signature": "function run()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "f3d5ca151df4bddb6f19d2bc6be66462c3fd41cb2e9d108045bcfdfcbd374dd6",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/Audit.tsx#Audit.share",
+      "name": "share",
+      "kind": "function",
+      "path": "app/Audit.tsx",
+      "span": "L58-L61",
+      "signature": "async function share(x: Ram)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "055fe080c72048f7f06553cf058ef274c92472b741ee99cfa54778307b460a66",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/Audit.tsx#Audit.text",
+      "name": "text",
+      "kind": "function",
+      "path": "app/Audit.tsx",
+      "span": "L42-L42",
+      "signature": "text = (x: Ram)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "a353d020ba5d5a546d3339680cb96c4049032cdbd0cc398b4910cda17e8f07e1",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/Audit.tsx#Audit.tick",
+      "name": "tick",
+      "kind": "function",
+      "path": "app/Audit.tsx",
+      "span": "L32-L32",
+      "signature": "tick = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "d8212b74ef459ba59799833bb3862f0e64bba929ba1bf48259f19c04550c3ecd",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/Audit.tsx#big",
+      "name": "big",
+      "kind": "function",
+      "path": "app/Audit.tsx",
+      "span": "L10-L10",
+      "signature": "big = (g: number)",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "b7e5de82b73cfe2fbf3eb28dfedecf3b266a7921d489d804231e242caedfe74f",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/Audit.tsx#fmt",
+      "name": "fmt",
+      "kind": "function",
+      "path": "app/Audit.tsx",
+      "span": "L9-L9",
+      "signature": "fmt = (s: number)",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "466076312b29ccb992a509c38ce4f491fff9b09cd04b9793e2f085a357043b57",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/Audit.tsx#Stats",
+      "name": "Stats",
+      "kind": "type",
+      "path": "app/Audit.tsx",
+      "span": "L11-L11",
+      "signature": "type Stats = { audits: number; gb: number; pct?: number | null };",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "b77f2fe35363cea1f50f93da1b4aead33c40475425212b8029ad3c56d726ec77",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/DonateClient.tsx",
+      "name": "DonateClient.tsx",
+      "kind": "file",
+      "path": "app/donate/DonateClient.tsx",
+      "span": "L1-L77",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "aabf866f9452f2a07f7203b4411c131e889ad9e6e88b659fdd1ccd66502cf2fe",
+      "chars": 4360,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/DonateClient.tsx#big",
+      "name": "big",
+      "kind": "function",
+      "path": "app/donate/DonateClient.tsx",
+      "span": "L7-L7",
+      "signature": "big = (g: number)",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "4e1b579d40c0858f25482985f60d4b16a6b729b721c6b397177986bc329f53f5",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/DonateClient.tsx#Donate",
+      "name": "Donate",
+      "kind": "function",
+      "path": "app/donate/DonateClient.tsx",
+      "span": "L10-L76",
+      "signature": "function Donate({ gb, name }: { gb: string; name: string })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "69536b4676cd2c368717b798c2a7df56fcfcc50f29dfdcba2a5f43b1e705f513",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/DonateClient.tsx#Donate.confirm",
+      "name": "confirm",
+      "kind": "function",
+      "path": "app/donate/DonateClient.tsx",
+      "span": "L28-L32",
+      "signature": "function confirm()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "d175106dc1ef66637dd96b1e04877bb05c6ce559f574fa346d07e18a2a6ca13c",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/DonateClient.tsx#Donate.copy",
+      "name": "copy",
+      "kind": "function",
+      "path": "app/donate/DonateClient.tsx",
+      "span": "L33-L33",
+      "signature": "async function copy()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "ef43f821f758c19eb2be522f3a79cef0b49cfe46c41cef741fe8fa44a6e69fc3",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/DonateClient.tsx#Donate.link",
+      "name": "link",
+      "kind": "function",
+      "path": "app/donate/DonateClient.tsx",
+      "span": "L27-L27",
+      "signature": "link = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "bfd0d9365753fded5e2e9b65d4167f42cbdefb5c6244d40299c5e9d872dfce2b",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/DonateClient.tsx#Donate.share",
+      "name": "share",
+      "kind": "function",
+      "path": "app/donate/DonateClient.tsx",
+      "span": "L34-L34",
+      "signature": "async function share()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "c29bc80e10d4da6c70a73b13e9453519a98c677ebcb614c66ae39986ec3eb127",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/DonateClient.tsx#Donate.tick",
+      "name": "tick",
+      "kind": "function",
+      "path": "app/donate/DonateClient.tsx",
+      "span": "L18-L18",
+      "signature": "tick = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "023422e9bf7dcc6e6281fd12e2e84b7eed4cb82e536d7039bc38450af211392c",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/DonateClient.tsx#S",
+      "name": "S",
+      "kind": "type",
+      "path": "app/donate/DonateClient.tsx",
+      "span": "L8-L8",
+      "signature": "type S = { donors: number; gb: number };",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "bf392bb1f52f106ef028d0ac96b1f2d12b239e0ad8c8439d9a781af943461a91",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/page.tsx",
+      "name": "page.tsx",
+      "kind": "file",
+      "path": "app/donate/page.tsx",
+      "span": "L1-L60",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "3e268d78b97ac2a567cdc29c4230239fce8980bc95ce48cb0c395a75988c75d9",
+      "chars": 7259,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/page.tsx#generateMetadata",
+      "name": "generateMetadata",
+      "kind": "function",
+      "path": "app/donate/page.tsx",
+      "span": "L32-L39",
+      "signature": "async function generateMetadata({ searchParams }: { searchParams: SP }): Promise<Metadata>",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "9ee750506fdb41b74caba26767c613e5f848c698f16f3b2b821c9e68536a639b",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/page.tsx#Page",
+      "name": "Page",
+      "kind": "function",
+      "path": "app/donate/page.tsx",
+      "span": "L41-L59",
+      "signature": "async function Page({ searchParams }: { searchParams: SP })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "8cc5fe7754da0dfe4ec535c38484e2ac09afff77c055e468e5be4d4fd5cf782e",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/donate/page.tsx#SP",
+      "name": "SP",
+      "kind": "type",
+      "path": "app/donate/page.tsx",
+      "span": "L5-L5",
+      "signature": "type SP = Promise<{ [k: string]: string | string[] | undefined }>;",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "e6fe0f4a5b610b1d007a07dd800060fb46a3fd0aa4362741cf1921493e1730f4",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/layout.tsx",
+      "name": "layout.tsx",
+      "kind": "file",
+      "path": "app/layout.tsx",
+      "span": "L1-L38",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "8fb2edd1e1ea74cf168046d9981a1f62d4a317a6436315001645773cc02fcdfd",
+      "chars": 1658,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/layout.tsx#RootLayout",
+      "name": "RootLayout",
+      "kind": "function",
+      "path": "app/layout.tsx",
+      "span": "L17-L37",
+      "signature": "function RootLayout({ children }: { children: React.ReactNode })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "d2151af70aaee7e7ced3a20afbbc244aaf700f8e347f184599b84738dc64cb8d",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/letter/LetterClient.tsx",
+      "name": "LetterClient.tsx",
+      "kind": "file",
+      "path": "app/letter/LetterClient.tsx",
+      "span": "L1-L54",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "c3de97cf0285c8dfe6aaf01f2c744ec022a220ebc4a3545cd7a7da3c01b7ee84",
+      "chars": 2493,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/letter/LetterClient.tsx#mmss",
+      "name": "mmss",
+      "kind": "function",
+      "path": "app/letter/LetterClient.tsx",
+      "span": "L5-L5",
+      "signature": "mmss = (s: number)",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "30076cfe6280073fe148463760a140fd264f52cfe0ea05e97c8437328d47454f",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/letter/LetterClient.tsx#Order",
+      "name": "Order",
+      "kind": "function",
+      "path": "app/letter/LetterClient.tsx",
+      "span": "L28-L53",
+      "signature": "function Order()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "da525753133b6b17a8a65c26f9521e30f6f114d23f30d5098ebb71ca454f4c10",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/letter/LetterClient.tsx#Timer",
+      "name": "Timer",
+      "kind": "function",
+      "path": "app/letter/LetterClient.tsx",
+      "span": "L7-L19",
+      "signature": "function Timer()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "f4c2959dded0862e28357f85eb3404543a67c328466b366445053e20d0d95585",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/letter/page.tsx",
+      "name": "page.tsx",
+      "kind": "file",
+      "path": "app/letter/page.tsx",
+      "span": "L1-L106",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "2b35207b1a6ce9d29cb60562f910deee4d9ff4e9d4733a0bc33474662d69674e",
+      "chars": 7962,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/letter/page.tsx#B",
+      "name": "B",
+      "kind": "type",
+      "path": "app/letter/page.tsx",
+      "span": "L6-L6",
+      "signature": "type B = { h?: string; p?: string[]; k?: \"q\" | \"w\" | \"l\" };",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "614323ac00483b749e2670919b50e9dde54fabc9bea18823c30a1da8e323ac0d",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/letter/page.tsx#body",
+      "name": "body",
+      "kind": "function",
+      "path": "app/letter/page.tsx",
+      "span": "L27-L68",
+      "signature": "body = (g: Ram | null, n: string): B[]",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "3735a24748bc02c1b07d7afb8c6c237a73ec25a015ab539ce0faf62691c8fdd8",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/letter/page.tsx#generateMetadata",
+      "name": "generateMetadata",
+      "kind": "function",
+      "path": "app/letter/page.tsx",
+      "span": "L8-L14",
+      "signature": "async function generateMetadata({ searchParams }: { searchParams: SP }): Promise<Metadata>",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "6c08a69db7e2d37a4e281615ce043d5f605c99a24ba9f09166f71149b03d4594",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/letter/page.tsx#Page",
+      "name": "Page",
+      "kind": "function",
+      "path": "app/letter/page.tsx",
+      "span": "L82-L105",
+      "signature": "async function Page({ searchParams }: { searchParams: SP })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "eef43eda464b4e46638d8eaf865878a8a37341d9f72072fbde06c95f39dc9f39",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/letter/page.tsx#SP",
+      "name": "SP",
+      "kind": "type",
+      "path": "app/letter/page.tsx",
+      "span": "L5-L5",
+      "signature": "type SP = Promise<{ [k: string]: string | string[] | undefined }>;",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "e6fe0f4a5b610b1d007a07dd800060fb46a3fd0aa4362741cf1921493e1730f4",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/og/route.tsx",
+      "name": "route.tsx",
+      "kind": "file",
+      "path": "app/og/route.tsx",
+      "span": "L1-L39",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "8b0714cd0d954541d77c8631e42e6e75740bf8f6a58ac4008f2aa52d1df41278",
+      "chars": 2320,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/og/route.tsx#GET",
+      "name": "GET",
+      "kind": "function",
+      "path": "app/og/route.tsx",
+      "span": "L4-L38",
+      "signature": "async function GET(req: Request)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "9a764dcd2a4f46bb54c286bc9df9e9af807349d9006855df06076f2a2a897549",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/page.tsx",
+      "name": "page.tsx",
+      "kind": "file",
+      "path": "app/page.tsx",
+      "span": "L1-L60",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "69463cbdcb0a4f4dbcd2fb5bec114f207809838a1c9eb8bfef609749e22b0b9b",
+      "chars": 5284,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/page.tsx#generateMetadata",
+      "name": "generateMetadata",
+      "kind": "function",
+      "path": "app/page.tsx",
+      "span": "L9-L18",
+      "signature": "async function generateMetadata({ searchParams }: { searchParams: SP }): Promise<Metadata>",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "de745261bb22bc1bc2444821bce7b42ea765e7062e3f09b713d69bd293d9ed34",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/page.tsx#Page",
+      "name": "Page",
+      "kind": "function",
+      "path": "app/page.tsx",
+      "span": "L28-L59",
+      "signature": "async function Page({ searchParams }: { searchParams: SP })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "0cf43c5d63ea2498c11260afdad84b4416197f364c2e6ee17d99383146cfd3d0",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/page.tsx#SP",
+      "name": "SP",
+      "kind": "type",
+      "path": "app/page.tsx",
+      "span": "L7-L7",
+      "signature": "type SP = Promise<{ [k: string]: string | string[] | undefined }>;",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "e6fe0f4a5b610b1d007a07dd800060fb46a3fd0aa4362741cf1921493e1730f4",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/ram/[size]/page.tsx",
+      "name": "page.tsx",
+      "kind": "file",
+      "path": "app/ram/[size]/page.tsx",
+      "span": "L1-L46",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "4a81f532e0b0651a5b4284f68db74b7442ce03ed2472fb91ed62cecf5607c1ad",
+      "chars": 3636,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/ram/[size]/page.tsx#generateMetadata",
+      "name": "generateMetadata",
+      "kind": "function",
+      "path": "app/ram/[size]/page.tsx",
+      "span": "L20-L25",
+      "signature": "async function generateMetadata({ params }: { params: Promise<{ size: string }> }): Promise<Metadata>",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "8fb1584804d22169672f55f7e4e03e988ea9208e54eb098f9ac13d5af2e8beee",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/ram/[size]/page.tsx#generateStaticParams",
+      "name": "generateStaticParams",
+      "kind": "function",
+      "path": "app/ram/[size]/page.tsx",
+      "span": "L18-L18",
+      "signature": "generateStaticParams = ()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "762eadc9823d805c6fd47a1ed277e92ed884a447076e9f66f4c509b9ed318ba6",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/ram/[size]/page.tsx#Page",
+      "name": "Page",
+      "kind": "function",
+      "path": "app/ram/[size]/page.tsx",
+      "span": "L27-L45",
+      "signature": "async function Page({ params }: { params: Promise<{ size: string }> })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "801a630b5760d1ccf120f56e904cbdde9f9918ceea21d970ef331b75111ea64d",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/robots.ts",
+      "name": "robots.ts",
+      "kind": "file",
+      "path": "app/robots.ts",
+      "span": "L1-L6",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "d25029f5bbe85af72249c39f935dc26d17c4d49818e76b9c8db1bd8f35f5339c",
+      "chars": 228,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/robots.ts#robots",
+      "name": "robots",
+      "kind": "function",
+      "path": "app/robots.ts",
+      "span": "L3-L5",
+      "signature": "function robots(): MetadataRoute.Robots",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "78c269048af305ce2388aa05c653accd3c28d597473da0507d711f886dd48d43",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/sitemap.ts",
+      "name": "sitemap.ts",
+      "kind": "file",
+      "path": "app/sitemap.ts",
+      "span": "L1-L7",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "34ea97ac20776112a8b00ae8114cb56b9be9c754da7ada04903fb61be2627c46",
+      "chars": 538,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "app/sitemap.ts#sitemap",
+      "name": "sitemap",
+      "kind": "function",
+      "path": "app/sitemap.ts",
+      "span": "L4-L6",
+      "signature": "function sitemap(): MetadataRoute.Sitemap",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "de5eb4d8fdcfa7899585742a87cb4c114e1565ce210687558272799faaf331fc",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/fake.ts",
+      "name": "fake.ts",
+      "kind": "file",
+      "path": "lib/fake.ts",
+      "span": "L1-L9",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "22fa794c111a22c3608bac4012587a131e5acdb8a236cfe598e8be14ca79c227",
+      "chars": 853,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/fake.ts#fakeDonations",
+      "name": "fakeDonations",
+      "kind": "function",
+      "path": "lib/fake.ts",
+      "span": "L6-L6",
+      "signature": "fakeDonations = (now: number)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "de2805328971fcb51b61253beed93bbbf6c148fbd8ece440b060d4517fca7c65",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/fake.ts#fakePct",
+      "name": "fakePct",
+      "kind": "function",
+      "path": "lib/fake.ts",
+      "span": "L8-L8",
+      "signature": "fakePct = (g: Ram, n: string)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "79f8448295d07b92f6fd61cd16f225de4e88615e8327457a0dd74cbc823bd27d",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/fake.ts#fakeTotals",
+      "name": "fakeTotals",
+      "kind": "function",
+      "path": "lib/fake.ts",
+      "span": "L5-L5",
+      "signature": "fakeTotals = (now: number)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "e0820868dc0b86331c3120e3ee27cd5710c6c9d82e11a53c65df1efef073b408",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/fake.ts#secs",
+      "name": "secs",
+      "kind": "function",
+      "path": "lib/fake.ts",
+      "span": "L4-L4",
+      "signature": "secs = (now: number)",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "1f2e561a11b6a1abc49d66cf8d8e752853b7b407c34e6ab1497c000d5b4319d3",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts",
+      "name": "tiers.ts",
+      "kind": "file",
+      "path": "lib/tiers.ts",
+      "span": "L1-L40",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "c5e12472345949438c814590f988936ca6f47d066be00a70a40f6a6f5ea37eff",
+      "chars": 3872,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts#caseNo",
+      "name": "caseNo",
+      "kind": "function",
+      "path": "lib/tiers.ts",
+      "span": "L35-L35",
+      "signature": "caseNo = (g: Ram, n: string)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "d7a25decab8cd4fabbbfb6323ffea41ead67d199cf861a7b429da2163217e021",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts#cleanName",
+      "name": "cleanName",
+      "kind": "function",
+      "path": "lib/tiers.ts",
+      "span": "L37-L37",
+      "signature": "cleanName = (v?: string | string[])",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "05f10625b2716f7c81efdf1bb96b2f148227cf0a80a66ec1359c2fd445d476b3",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts#donorOf",
+      "name": "donorOf",
+      "kind": "function",
+      "path": "lib/tiers.ts",
+      "span": "L39-L39",
+      "signature": "donorOf = (t: Tier)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "78072702f95c4a5684658ee8058d2546d3007688f3bc1767a0f79004482a5dc3",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts#fmtRam",
+      "name": "fmtRam",
+      "kind": "function",
+      "path": "lib/tiers.ts",
+      "span": "L32-L32",
+      "signature": "fmtRam = (g: Ram)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "667d16544b82006b2c03f2e5788811ed91532c5b157f15cd5f020a0f447f3181",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts#gbParam",
+      "name": "gbParam",
+      "kind": "function",
+      "path": "lib/tiers.ts",
+      "span": "L31-L31",
+      "signature": "gbParam = (g: Ram)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "917f0c8b410e78b488844576b169e9bbb4e4135273a52db3c4e48ded0fa499fe",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts#hash",
+      "name": "hash",
+      "kind": "function",
+      "path": "lib/tiers.ts",
+      "span": "L34-L34",
+      "signature": "hash = (s: string)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "f5f4643ef0e5305556914e32b8dffb811d3976edebe9c498c3c455746bb31173",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts#parseGb",
+      "name": "parseGb",
+      "kind": "function",
+      "path": "lib/tiers.ts",
+      "span": "L26-L30",
+      "signature": "parseGb = (v?: string | string[]): Ram | null",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "a267287ed5fad0ae0fd4bb6d384ffbe0eca4ef7191bcf9be79c08f8825dc08fa",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts#Ram",
+      "name": "Ram",
+      "kind": "type",
+      "path": "lib/tiers.ts",
+      "span": "L5-L5",
+      "signature": "type Ram = number | \"mac\";",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "314df62de9a4ce8db3ef51370b258782438d48c739171f1b8ab90c51838c3459",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts#Tier",
+      "name": "Tier",
+      "kind": "type",
+      "path": "lib/tiers.ts",
+      "span": "L6-L6",
+      "signature": "type Tier = { id: string; max?: number; status: string; color: string; line: string; post: string; eta: number; siren?: boolean };",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "c70570a42aa8a682560a40cb5b1d1a1d9038b16b5d566b16cc634f4212e50f29",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts#tierOf",
+      "name": "tierOf",
+      "kind": "function",
+      "path": "lib/tiers.ts",
+      "span": "L25-L25",
+      "signature": "tierOf = (g: Ram): Tier",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "e3c7df93fc77653403beab95cc4e49b300787d2166935de84438b847fef7f7c2",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts#util",
+      "name": "util",
+      "kind": "function",
+      "path": "lib/tiers.ts",
+      "span": "L36-L36",
+      "signature": "util = (g: Ram, n: string)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "25dc8982c997d9da48803ac4bfb3fe34315e580bee2f5248ddee7258a1ac6a55",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "lib/tiers.ts#wasted",
+      "name": "wasted",
+      "kind": "function",
+      "path": "lib/tiers.ts",
+      "span": "L33-L33",
+      "signature": "wasted = (g: Ram)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "e0aef1d31e5e2e87820a9543dad9ea7dce2818e0be14bad21ca280c3472afae3",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "next-env.d.ts",
+      "name": "next-env.d.ts",
+      "kind": "file",
+      "path": "next-env.d.ts",
+      "span": "L1-L8",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b",
+      "chars": 288,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "next.config.ts",
+      "name": "next.config.ts",
+      "kind": "file",
+      "path": "next.config.ts",
+      "span": "L1-L4",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "7eba77a1bee720ae17a4df36386ea1351c3d1ec624106af44efe37e40057bd54",
+      "chars": 118,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "app/Audit.tsx",
+      "target": "app/Audit.tsx#Audit",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx",
+      "target": "app/Audit.tsx#big",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx",
+      "target": "app/Audit.tsx#fmt",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx",
+      "target": "app/Audit.tsx#Stats",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx",
+      "target": "@/lib/fake",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx",
+      "target": "@/lib/tiers",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.copy",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.link",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.qs",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.share",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.text",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.tick",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#big",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#fmt",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "lib/fake.ts#fakePct",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "lib/tiers.ts#caseNo",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "lib/tiers.ts#cleanName",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "lib/tiers.ts#fmtRam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "lib/tiers.ts#parseGb",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "lib/tiers.ts#tierOf",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "lib/tiers.ts#util",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "lib/tiers.ts#wasted",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.copy",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.link",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.qs",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.run",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.share",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.text",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit",
+      "target": "app/Audit.tsx#Audit.tick",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit.copy",
+      "target": "app/Audit.tsx#Audit.link",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit.copy",
+      "target": "app/Audit.tsx#Audit.text",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit.link",
+      "target": "app/Audit.tsx#Audit.qs",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit.qs",
+      "target": "lib/tiers.ts#gbParam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/Audit.tsx#Audit.run",
+      "target": "app/Audit.tsx#Audit.link",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit.share",
+      "target": "app/Audit.tsx#Audit.copy",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit.share",
+      "target": "app/Audit.tsx#Audit.link",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit.share",
+      "target": "app/Audit.tsx#Audit.text",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/Audit.tsx#Audit.text",
+      "target": "lib/tiers.ts#fmtRam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/Audit.tsx#Audit.text",
+      "target": "lib/tiers.ts#tierOf",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/Audit.tsx#Audit.tick",
+      "target": "lib/fake.ts#fakeTotals",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx",
+      "target": "app/donate/DonateClient.tsx#big",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx",
+      "target": "app/donate/DonateClient.tsx#Donate",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx",
+      "target": "app/donate/DonateClient.tsx#S",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx",
+      "target": "@/lib/fake",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx",
+      "target": "@/lib/tiers",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "app/donate/DonateClient.tsx#big",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "app/donate/DonateClient.tsx#Donate.link",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "app/donate/DonateClient.tsx#Donate.tick",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "lib/tiers.ts#caseNo",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "lib/tiers.ts#cleanName",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "lib/tiers.ts#donorOf",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "lib/tiers.ts#fmtRam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "lib/tiers.ts#gbParam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "lib/tiers.ts#parseGb",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "lib/tiers.ts#tierOf",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "app/donate/DonateClient.tsx#Donate.confirm",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "app/donate/DonateClient.tsx#Donate.copy",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "app/donate/DonateClient.tsx#Donate.link",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "app/donate/DonateClient.tsx#Donate.share",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate",
+      "target": "app/donate/DonateClient.tsx#Donate.tick",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate.copy",
+      "target": "app/donate/DonateClient.tsx#Donate.link",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate.share",
+      "target": "app/donate/DonateClient.tsx#Donate.copy",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate.share",
+      "target": "app/donate/DonateClient.tsx#Donate.link",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/DonateClient.tsx#Donate.tick",
+      "target": "lib/fake.ts#fakeDonations",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/page.tsx",
+      "target": "app/donate/page.tsx#generateMetadata",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/page.tsx",
+      "target": "app/donate/page.tsx#Page",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/page.tsx",
+      "target": "app/donate/page.tsx#SP",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/page.tsx",
+      "target": "@/lib/tiers",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/page.tsx",
+      "target": "app/donate/DonateClient.tsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/page.tsx",
+      "target": "next",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/donate/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#cleanName",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#donorOf",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#fmtRam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#gbParam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#parseGb",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#tierOf",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/donate/page.tsx#Page",
+      "target": "lib/tiers.ts#cleanName",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/layout.tsx",
+      "target": "app/layout.tsx#RootLayout",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/layout.tsx",
+      "target": "./globals.css",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/layout.tsx",
+      "target": "@/lib/tiers",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/layout.tsx",
+      "target": "next",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/LetterClient.tsx",
+      "target": "app/letter/LetterClient.tsx#mmss",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/LetterClient.tsx",
+      "target": "app/letter/LetterClient.tsx#Order",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/LetterClient.tsx",
+      "target": "app/letter/LetterClient.tsx#Timer",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/LetterClient.tsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/LetterClient.tsx#Timer",
+      "target": "app/letter/LetterClient.tsx#mmss",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/page.tsx",
+      "target": "app/letter/page.tsx#B",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/page.tsx",
+      "target": "app/letter/page.tsx#body",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/page.tsx",
+      "target": "app/letter/page.tsx#generateMetadata",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/page.tsx",
+      "target": "app/letter/page.tsx#Page",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/page.tsx",
+      "target": "app/letter/page.tsx#SP",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/page.tsx",
+      "target": "@/lib/tiers",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/page.tsx",
+      "target": "app/letter/LetterClient.tsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/page.tsx",
+      "target": "next",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/page.tsx#body",
+      "target": "lib/tiers.ts#fmtRam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/letter/page.tsx#body",
+      "target": "lib/tiers.ts#tierOf",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/letter/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#gbParam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/letter/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#parseGb",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/letter/page.tsx#Page",
+      "target": "app/letter/page.tsx#body",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/letter/page.tsx#Page",
+      "target": "lib/tiers.ts#cleanName",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/letter/page.tsx#Page",
+      "target": "lib/tiers.ts#gbParam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/letter/page.tsx#Page",
+      "target": "lib/tiers.ts#parseGb",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/og/route.tsx",
+      "target": "app/og/route.tsx#GET",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/og/route.tsx",
+      "target": "@/lib/tiers",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/og/route.tsx",
+      "target": "next/og",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/og/route.tsx#GET",
+      "target": "lib/tiers.ts#caseNo",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/og/route.tsx#GET",
+      "target": "lib/tiers.ts#cleanName",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/og/route.tsx#GET",
+      "target": "lib/tiers.ts#donorOf",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/og/route.tsx#GET",
+      "target": "lib/tiers.ts#fmtRam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/og/route.tsx#GET",
+      "target": "lib/tiers.ts#parseGb",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/og/route.tsx#GET",
+      "target": "lib/tiers.ts#tierOf",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/page.tsx",
+      "target": "app/page.tsx#generateMetadata",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/page.tsx",
+      "target": "app/page.tsx#Page",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/page.tsx",
+      "target": "app/page.tsx#SP",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/page.tsx",
+      "target": "@/lib/tiers",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/page.tsx",
+      "target": "app/Audit.tsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/page.tsx",
+      "target": "app/ram/[size]/page.tsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/page.tsx",
+      "target": "next",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/page.tsx",
+      "target": "next/link",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#cleanName",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#fmtRam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#gbParam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#parseGb",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/page.tsx#generateMetadata",
+      "target": "lib/tiers.ts#tierOf",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/page.tsx#Page",
+      "target": "lib/tiers.ts#cleanName",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/ram/[size]/page.tsx",
+      "target": "app/ram/[size]/page.tsx#generateMetadata",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/ram/[size]/page.tsx",
+      "target": "app/ram/[size]/page.tsx#generateStaticParams",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/ram/[size]/page.tsx",
+      "target": "app/ram/[size]/page.tsx#Page",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/ram/[size]/page.tsx",
+      "target": "@/lib/tiers",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/ram/[size]/page.tsx",
+      "target": "next",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/ram/[size]/page.tsx",
+      "target": "next/link",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/ram/[size]/page.tsx#Page",
+      "target": "lib/tiers.ts#tierOf",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "app/robots.ts",
+      "target": "app/robots.ts#robots",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/robots.ts",
+      "target": "@/lib/tiers",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/robots.ts",
+      "target": "next",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/sitemap.ts",
+      "target": "app/sitemap.ts#sitemap",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/sitemap.ts",
+      "target": "@/lib/tiers",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/sitemap.ts",
+      "target": "app/ram/[size]/page.tsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "app/sitemap.ts",
+      "target": "next",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/fake.ts",
+      "target": "lib/fake.ts#fakeDonations",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/fake.ts",
+      "target": "lib/fake.ts#fakePct",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/fake.ts",
+      "target": "lib/fake.ts#fakeTotals",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/fake.ts",
+      "target": "lib/fake.ts#secs",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/fake.ts",
+      "target": "lib/tiers.ts",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/fake.ts#fakeDonations",
+      "target": "lib/fake.ts#secs",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/fake.ts#fakePct",
+      "target": "lib/tiers.ts#gbParam",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "lib/fake.ts#fakePct",
+      "target": "lib/tiers.ts#hash",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "lib/fake.ts#fakePct",
+      "target": "lib/tiers.ts#tierOf",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "lib/fake.ts#fakeTotals",
+      "target": "lib/fake.ts#secs",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts",
+      "target": "lib/tiers.ts#caseNo",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts",
+      "target": "lib/tiers.ts#cleanName",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts",
+      "target": "lib/tiers.ts#donorOf",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts",
+      "target": "lib/tiers.ts#fmtRam",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts",
+      "target": "lib/tiers.ts#gbParam",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts",
+      "target": "lib/tiers.ts#hash",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts",
+      "target": "lib/tiers.ts#parseGb",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts",
+      "target": "lib/tiers.ts#Ram",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts",
+      "target": "lib/tiers.ts#Tier",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts",
+      "target": "lib/tiers.ts#tierOf",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts",
+      "target": "lib/tiers.ts#util",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts",
+      "target": "lib/tiers.ts#wasted",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts#caseNo",
+      "target": "lib/tiers.ts#gbParam",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts#caseNo",
+      "target": "lib/tiers.ts#hash",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts#util",
+      "target": "lib/tiers.ts#gbParam",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts#util",
+      "target": "lib/tiers.ts#hash",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "lib/tiers.ts#wasted",
+      "target": "lib/tiers.ts#fmtRam",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "next-env.d.ts",
+      "target": "./.next/types/root-params.d.ts",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "next-env.d.ts",
+      "target": "./.next/types/routes.d.ts",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "next.config.ts",
+      "target": "next",
+      "relation": "imports",
+      "confidence": "extracted"
+    }
+  ]
+}
