@@ -1,0 +1,14 @@
+{
+  "lastQuery": "install vercel analytics\n\n\n<pasted_content id=\"299c\">\nGet Started\nTo start counting visitors and page views, follow these steps.\n\n\nNext.js\n1\n\nInstall our package\n\nStart by installing @vercel/analytics in your existing project.\nnpm\nyarn\npnpm\nnpm i @vercel/analytics\n2\n\nAdd the React component\n\nImport and use the <Analytics/> React component into your app's layout.\nimport { Analytics } from \"@vercel/analytics/next\"\nFor full examples and further reference, please refer to our documentation\n3\n\nDeploy & Visit your Site\n\nDeploy your changes and visit the deployment to collect your page views.\n\nIf you don't see data after 30 seconds, please check for content blockers and try to navigate between pages on your site.\n</pasted_content id=\"299c\">",
+  "perAgentQuery": {},
+  "graftReads": 0,
+  "sourceReads": 1,
+  "savedTokens": 0,
+  "injectedPointers": [
+    "app/letter/page.tsx:L27-L68",
+    "lib/tiers.ts:L25-L25",
+    "lib/tiers.ts:L26-L30"
+  ],
+  "nudges": 1,
+  "host": "claude-code"
+}

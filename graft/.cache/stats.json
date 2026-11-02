@@ -1,0 +1,15 @@
+{
+  "nodeCount": 91,
+  "edgeCount": 204,
+  "languages": [
+    "tsx",
+    "typescript"
+  ],
+  "totalCount": 91,
+  "readyCount": 0,
+  "staleCount": 0,
+  "dirty": false,
+  "syncing": false,
+  "syncedAt": "2026-11-02T02:03:02.864Z",
+  "lastFile": "layout.tsx"
+}
